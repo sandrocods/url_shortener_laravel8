@@ -13,7 +13,7 @@ class CreateTblShortTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('tbl_short');
+      
         
         Schema::create('tbl_short', function (Blueprint $table) {
             $table->id();
@@ -21,7 +21,9 @@ class CreateTblShortTable extends Migration
             $table->string('short_link');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE tbl_short AUTO_INCREMENT = 0;");
+        
+        //Set Auto Increment  
+        //DB::statement("ALTER TABLE tbl_short AUTO_INCREMENT = 0;");
     }
 
     /**
@@ -31,6 +33,6 @@ class CreateTblShortTable extends Migration
      */
     public function down()
     {
-        
+        Schema::dropIfExists('tbl_short');
     }
 }

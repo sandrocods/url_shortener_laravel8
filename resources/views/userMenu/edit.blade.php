@@ -55,7 +55,7 @@
             <div class="col-xl-10">
 
                 <div class="card">
-                    <div class="card-header">{{ __('Data Shorturl') }}</div>
+                    <div class="card-header">{{ __('Edit Profile') }}</div>
 
                     <div class="card-body">
                         <div>
